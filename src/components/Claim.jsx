@@ -1,7 +1,7 @@
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 
 export default function BasicButtons() {
   return (
@@ -19,20 +19,36 @@ export default function BasicButtons() {
           xs={12}
         >
           <Button
-            variant="contained"
+            disabled // Desactiva el botón
             sx={{
               backgroundColor: "#59AE43",
               color: "white",
               padding: "10px",
               width: "98%",
-              borderTopLeftRadius: "25px", // Redondear la esquina izquierda
-              borderTopRightRadius: "25px", // Redondear la esquina derecha
-              borderBottomLeftRadius: "25px", // Redondear la esquina izquierda
-              borderBottomRightRadius: "25px", // Redondear la esquina derecha
+              borderTopLeftRadius: "25px",
+              borderTopRightRadius: "25px",
+              borderBottomLeftRadius: "25px",
+              borderBottomRightRadius: "25px",
+              "&:hover": {
+                backgroundColor: "#59AE43",
+              },
             }}
-            endIcon={<ArrowForwardIcon />}
+            endIcon={
+              <ArrowForwardIcon
+                sx={{
+                  color: "white",
+                }}
+              />
+            }
           >
-            YES - CLAIM MY DISCOUNT
+            <Typography
+              sx={{
+                color: "white",
+                fontFamily: "inherit",
+              }}
+            >
+              YES - CLAIM MY DISCOUNT
+            </Typography>
           </Button>
         </Grid>
       </Grid>

@@ -6,14 +6,11 @@ import HalfRating from "./Rating";
 
 export default function BasicCard() {
   return (
-    <Card sx={{ minWidth: 275 }}>
-      <Card
-        sx={{ padding: "16px" }}
-        className="prueba"
-      >
+    <Card sx={{ minWidth: 275, boxShadow: "none" }}>
+      <Card sx={{ padding: "16px", backgroundColor: "#FAFAFA" }}>
         <CardContent
           sx={{ borderTopLeftRadius: 10, borderTopRightRadius: 10 }}
-          className="prueba"
+          className="white"
         >
           <Grid
             container
@@ -54,13 +51,18 @@ export default function BasicCard() {
                   <HalfRating></HalfRating>
                 </Grid>
                 <Grid
+                  className="manropebold-14"
                   item
                   xs={12}
                   sx={{ height: 12 }}
                 >
                   <Typography
-                    sx={{ display: "inline", marginRight: "10px" }}
-                    variant="body1"
+                    className="manropebold-14"
+                    sx={{
+                      className: "manropebold-14",
+                      display: "inline",
+                      marginRight: "10px",
+                    }}
                     color="#333333"
                   >
                     Ken T.

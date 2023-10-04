@@ -5,13 +5,11 @@ import Typography from "@mui/material/Typography";
 
 export default function Certificado() {
   return (
-    <Card sx={{ minWidth: 275 }}>
-      <Card
-        sx={{ padding: "16px" }}
-        className="prueba"
-      >
+    <Card sx={{ minWidth: 275, className: "prueba" }}>
+      <Card sx={{ padding: "16px", backgroundColor: "greenyellow" }}>
         <CardContent
           sx={{
+            className: "prueba",
             borderTopLeftRadius: 10,
             borderTopRightRadius: 10,
             borderBottomLeftRadius: 10,
@@ -49,7 +47,7 @@ export default function Certificado() {
               <Grid
                 container
                 spacing={2}
-                sx={{ height: 48 }}
+                sx={{ height: 48, className: "prueba" }}
               >
                 <Grid
                   item
@@ -57,7 +55,11 @@ export default function Certificado() {
                   sx={{ height: 12 }}
                 >
                   <Typography
-                    sx={{ display: "inline", marginRight: "10px" }}
+                    sx={{
+                      display: "inline",
+                      marginRight: "10px",
+                      className: "prueba",
+                    }}
                     variant="body1"
                     color="#333333"
                   >
@@ -67,12 +69,16 @@ export default function Certificado() {
                   <Typography
                     variant="body1"
                     color="#5BB59A"
-                    sx={{ display: "inline" }}
+                    sx={{ display: "inline", className: "prueba" }}
                   >
                     30 day satisfaction guarantee.
                   </Typography>
                   <Typography
-                    sx={{ display: "inline", marginRight: "10px" }}
+                    sx={{
+                      display: "inline",
+                      marginRight: "10px",
+                      className: "prueba",
+                    }}
                     variant="body1"
                     color="#333333"
                   >

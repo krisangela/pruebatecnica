@@ -18,7 +18,7 @@ export default function BasicButtons() {
           xs={12}
         >
           <Button
-            variant="contained"
+            disabled
             sx={{
               backgroundColor: "#EDF3FD",
               color: "white",

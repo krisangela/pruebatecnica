@@ -138,14 +138,12 @@ export function HorizontalLinearStepper() {
                 height: "30px",
                 width: "30px",
                 marginRight: "10px",
-
-                borderWidth: "8px", // Ancho del borde
-                color: "#2C7EF8", // Color de fondo del Avatar
-
+                borderWidth: "8px",
+                color: "#2C7EF8",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                borderRadius: "50%", // Hacerlo redondo
+                borderRadius: "50%",
               }}
             >
               4

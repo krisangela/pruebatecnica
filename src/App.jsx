@@ -24,7 +24,8 @@ export default function App() {
     <>
       <Container sx={{ maxWidth: "none !important" }}>
         <Headerb
-          style={{ position: "fixed", top: 0, width: "100%", zIndex: 1 }}
+          position="top"
+          style={{ position: "fixed", top: 0, width: "100%", zIndex: 10 }}
         >
           {/* Header fijo en la parte superior */}
         </Headerb>
@@ -43,49 +44,52 @@ export default function App() {
             </Box>
           </Container>
         </React.Fragment>
-        <React.Fragment>
-          <CssBaseline />
-          <Container maxWidth="xl">
-            <Container
-              maxWidth="xl"
-              className="prueba"
+
+        <Container
+          maxWidth="xl"
+          style={{ position: "relative", top: "70px", bottom: "100px" }}
+        >
+          <Container
+            maxWidth="xl"
+            className="graybg"
+            style={{ zIndex: 0 }}
+          >
+            <Grid
+              container
+              spacing={2}
             >
               <Grid
-                container
-                spacing={2}
+                item
+                xs={12}
+                sm={12}
+                md={6}
+                lg={6}
+                xl={6}
               >
-                <Grid
-                  item
-                  xs={12}
-                  sm={12}
-                  md={6}
-                  lg={6}
-                  xl={6}
-                >
-                  <BasicCard className="graybg"></BasicCard>
+                <BasicCard className="graybg"></BasicCard>
 
-                  <RecipeReviewCard></RecipeReviewCard>
-                </Grid>
-                <Grid
-                  item
-                  xs={12}
-                  sm={12}
-                  md={6}
-                  lg={6}
-                  xl={6}
-                >
-                  <Ptitle></Ptitle>
-                  <Pdescrip></Pdescrip>
-                  <Benefits></Benefits>
-                  <Percent></Percent>
-                  <Claim sx={{ width: "100%" }}></Claim>
-                  <Payment></Payment>
-                  <Certificado></Certificado>
-                </Grid>
+                <RecipeReviewCard className="prueba"></RecipeReviewCard>
               </Grid>
-            </Container>
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={6}
+                lg={6}
+                xl={6}
+              >
+                <Ptitle></Ptitle>
+                <Pdescrip></Pdescrip>
+                <Benefits></Benefits>
+                <Percent></Percent>
+                <Claim sx={{ width: "100%" }}></Claim>
+                <Payment></Payment>
+                <Certificado></Certificado>
+              </Grid>
+            </Grid>
           </Container>
-        </React.Fragment>
+        </Container>
+
         <Footerb position="bottom"></Footerb>
       </Container>
     </>
