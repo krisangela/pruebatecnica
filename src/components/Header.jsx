@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Grid from "@mui/material/Grid";
+import { AppBar, Container, Stack, Typography } from "@mui/material";
 
 export function Headerb() {
   return (
@@ -10,74 +11,140 @@ export function Headerb() {
         top="0"
         sx={{ position: "fixed", top: 0, left: 0, width: "100%" }}
       >
-        <Toolbar className="dark-blue-medium">
-          <Grid
-            container
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Grid
-              item
-              xs={12}
-              sm={12}
-              md={3}
-              lg={3}
-              xl={3}
-            >
-              <img
-                src="src\assets\check-flower.svg"
-                alt="icono"
-                style={{ marginRight: 10 + "px" }}
-              />
-              30-DAY SATISFACTION GUARANTEE
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={12}
-              md={3}
-              lg={3}
-              xl={3}
-            >
-              <img
-                src="src\assets\truck.svg"
-                alt="camion"
-                style={{ marginRight: 10 + "px" }}
-              />
-              Free delivery on orders over $40.00
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={12}
-              md={3}
-              lg={3}
-              xl={3}
-            >
-              <img
-                src="src\assets\heart.svg"
-                alt="corazon"
-                style={{ marginRight: 10 + "px" }}
-              />
-              50.000+ HAPPY CUSTOMERS
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={12}
-              md={3}
-              lg={3}
-              xl={3}
-            >
-              <img
-                src="src\assets\check-cicle.svg"
-                alt="Icono"
-                style={{ marginRight: 10 + "px" }}
-              />
-              100% Money Back Guarantee
-            </Grid>
-          </Grid>
-        </Toolbar>
+        <AppBar position="static">
+          <Toolbar className="dark-blue-medium">
+            <Container maxWidth="xl">
+              <Stack
+                spacing={2}
+                direction="row"
+                style={{ marginTop: "20px", marginBottom: "20px" }}
+              >
+                <Grid
+                  container
+                  spacing={0}
+                  justifyContent={"space-between"}
+                >
+                  {/* Primer elemento */}
+                  <Grid item>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "left",
+                        className: "manrope-medium-12",
+                      }}
+                    >
+                      <img
+                        src="src\assets\check-flower.svg"
+                        alt="icono"
+                        style={{
+                          marginRight: 10 + "px",
+                          height: "22px",
+                          width: "22px",
+                          marginLeft: "5px",
+                        }}
+                      />
+
+                      <Typography
+                        sx={{ display: "inline" }}
+                        color="#000000"
+                        marginRight="5px"
+                        alignContent={"center"}
+                      >
+                        <span className=" manrope-medium-12">
+                          30-DAY SATISFACTION GUARANTEE
+                        </span>
+                      </Typography>
+                    </div>
+                  </Grid>
+                  {/* Segundo grid */}
+                  <Grid item>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <img
+                        src="src\assets\truck.svg"
+                        alt="icono"
+                        style={{
+                          marginRight: 10 + "px",
+                          height: "22px",
+                          width: "22px",
+                          marginLeft: "5px",
+                        }}
+                      />
+                      <Typography
+                        sx={{ display: "inline" }}
+                        color="#000000"
+                        marginRight="5px"
+                      >
+                        <span className="manrope-medium-12">
+                          FREE DELIVERY ON ORDERS OVER $40.00
+                        </span>
+                      </Typography>
+                    </div>
+                  </Grid>
+                  {/* Tercer paso */}
+                  <Grid item>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <img
+                        src="src\assets\heart.svg"
+                        alt="icono"
+                        style={{
+                          marginRight: 10 + "px",
+                          height: "22px",
+                          width: "22px",
+                          marginLeft: "5px",
+                        }}
+                      />
+                      <Typography
+                        sx={{ display: "inline" }}
+                        color="#000000"
+                        marginRight="5px"
+                      >
+                        <span className="manrope-medium-12">
+                          50.000+ HAPPY CUSTOMERS
+                        </span>
+                      </Typography>
+                    </div>
+                  </Grid>
+                  {/* Cuarto grid */}
+                  <Grid item>
+                    <div style={{ display: "flex", alignItems: "right" }}>
+                      <img
+                        src="src\assets\check-cicle.svg"
+                        alt="icono"
+                        style={{
+                          marginRight: 10 + "px",
+                          height: "22px",
+                          width: "22px",
+                          marginLeft: "5px",
+                        }}
+                      />
+                      <Typography
+                        sx={{ display: "inline" }}
+                        color="#000000"
+                        marginRight="5px"
+                      >
+                        <span className="manrope-medium-12">
+                          100% MONEY BACK GUARANTEE
+                        </span>
+                      </Typography>
+                    </div>
+                  </Grid>
+                </Grid>
+              </Stack>
+            </Container>
+          </Toolbar>
+        </AppBar>
       </Box>
     </>
   );

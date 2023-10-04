@@ -28,6 +28,12 @@ body {
   background-color: var(--background-blue);
   color: #FFFFFF;
 }
+.manrope-medium-12{
+  font-family: 'Manrope';
+  font-weight: 500;
+  font-size: 12px;
+  color: #FFFFFF;
+}
 .dark-blue-regular{
   font-family: 'Manrope';
   font-weight: 400;

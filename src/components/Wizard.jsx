@@ -15,10 +15,7 @@ export function HorizontalLinearStepper() {
         justifyContent={"space-between"}
       >
         {/* Primer paso */}
-        <Grid
-          item
-          // xs={4}
-        >
+        <Grid item>
           <div
             style={{
               display: "flex",
