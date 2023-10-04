@@ -1,111 +1,166 @@
-/* eslint-disable react/jsx-key */
-import * as React from "react";
-import Box from "@mui/material/Box";
-import Stepper from "@mui/material/Stepper";
-import Step from "@mui/material/Step";
-import StepLabel from "@mui/material/StepLabel";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import CheckCircle from "@mui/icons-material/CheckCircle";
-
-const steps = [
-  "Step 1 : Cart Review",
-  "Step 2 : Checkout",
-  "Step 3 : Special Offer",
-  "Step 4 : Confirmation",
-];
-
-const stepIcons = [
-  <CheckCircle
-    fontSize="small"
-    style={{ color: "green" }}
-  />,
-  <CheckCircle
-    fontSize="small"
-    style={{ color: "green" }}
-  />,
-  <img
-    src="src\assets\step3.svg"
-    style={{ width: "28px", height: "20px" }}
-    alt="Custom Icon"
-  />,
-  <img
-    src="src\assets\step4.svg"
-    style={{ width: "28px", height: "20px" }}
-    alt="Custom Icon"
-  />,
-];
+import Stack from "@mui/material/Stack";
+import { Avatar, Grid, Typography } from "@mui/material";
+import CheckCircleSharpIcon from "@mui/icons-material/CheckCircleSharp";
 
 export function HorizontalLinearStepper() {
-  const [activeStep, setActiveStep] = React.useState(3);
-  const [skipped, setSkipped] = React.useState(new Set());
-
-  // eslint-disable-next-line no-unused-vars
-  const isStepOptional = (step) => {
-    return step === 1;
-  };
-
-  const isStepSkipped = (step) => {
-    return skipped.has(step);
-  };
-
-  const handleNext = () => {
-    let newSkipped = skipped;
-    if (isStepSkipped(activeStep)) {
-      newSkipped = new Set(newSkipped.values());
-      newSkipped.delete(activeStep);
-    }
-
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    setSkipped(newSkipped);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
   return (
-    <Box sx={{ width: "100%" }}>
-      <Stepper activeStep={activeStep}>
-        {steps.map((label, index) => {
-          const stepProps = {};
-          const labelProps = {};
-          // if (isStepOptional(index)) {
-          //   labelProps.optional = (
-          //     <Typography variant="caption">Optional</Typography>
-          //   );
-          // }
-          if (isStepSkipped(index)) {
-            stepProps.completed = false;
-          }
-          return (
-            <Step
-              key={label}
-              {...stepProps}
+    <Stack
+      spacing={2}
+      direction="row"
+      style={{ marginTop: "20px", marginBottom: "20px" }}
+    >
+      <Grid
+        container
+        spacing={0}
+        justifyContent={"space-between"}
+      >
+        {/* Primer paso */}
+        <Grid
+          item
+          // xs={4}
+        >
+          <div style={{ display: "flex", alignItems: "left" }}>
+            <Avatar
+              sx={{
+                bgcolor: "#FFFFFF",
+                height: "30px",
+                width: "30px",
+                marginRight: "10px",
+                marginLeft: "5px",
+              }}
             >
-              <StepLabel
-                {...labelProps}
-                icon={stepIcons[index]}
-              >
-                {label}
-              </StepLabel>
-            </Step>
-          );
-        })}
-      </Stepper>
-      {activeStep === steps.length ? (
-        <React.Fragment>
-          <Typography sx={{ mt: 2, mb: 1 }}>
-            All steps completed - you&apos;re finished
-          </Typography>
-          <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-            <Box sx={{ flex: "1 1 auto" }} />
-            <Button onClick={() => setActiveStep(0)}>Reset</Button>
-          </Box>
-        </React.Fragment>
-      ) : (
-        <React.Fragment></React.Fragment>
-      )}
-    </Box>
+              <CheckCircleSharpIcon
+                sx={{
+                  height: "31px",
+                  width: "31px",
+                  //  marginRight: "10px",
+                  //  marginLeft: "5px",
+                }}
+                style={{ color: "#85BF55" }}
+              />
+            </Avatar>
+
+            <Typography
+              className="manrope-regular-20"
+              sx={{ display: "inline" }}
+              color="#000000"
+              marginRight="5px"
+              alignContent={"center"}
+            >
+              Step 1: Cart Review
+            </Typography>
+          </div>
+        </Grid>
+        {/* Segundo paso */}
+        <Grid
+          item
+          // xs={3}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Avatar
+              sx={{
+                bgcolor: "#FFFFFF",
+                height: "30px",
+                width: "30px",
+                marginRight: "10px",
+                marginLeft: "5px",
+              }}
+            >
+              <CheckCircleSharpIcon
+                sx={{
+                  height: "31px",
+                  width: "31px",
+                  //  marginRight: "10px",
+                  //  marginLeft: "5px",
+                }}
+                style={{ color: "#85BF55" }}
+              />
+            </Avatar>
+            <Typography
+              className="manrope-regular-20"
+              sx={{ display: "inline" }}
+              color="#000000"
+              marginRight="5px"
+            >
+              Step 2: Payment
+            </Typography>
+          </div>
+        </Grid>
+        {/* Tercer paso */}
+        <Grid
+          item
+          // xs={3}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Avatar
+              sx={{
+                className: "manrope-regular-20",
+                bgcolor: "#2C7EF8",
+                height: "30px",
+                width: "30px",
+                marginRight: "10px",
+              }}
+            >
+              3
+            </Avatar>
+            <Typography
+              className="manrope-regular-20"
+              sx={{ display: "inline" }}
+              color="#000000"
+              marginRight="5px"
+            >
+              Step 3: Confirm
+            </Typography>
+          </div>
+        </Grid>
+        {/* Cuarto paso */}
+        <Grid
+          item
+          // xs={3}
+        >
+          <div style={{ display: "flex", alignItems: "right" }}>
+            <Avatar
+              sx={{
+                bgcolor: "#FFFFFF",
+                borderColor: "#2C7EF8",
+                height: "30px",
+                width: "30px",
+                marginRight: "10px",
+
+                borderWidth: "8px", // Ancho del borde
+                color: "#2C7EF8", // Color de fondo del Avatar
+
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: "50%", // Hacerlo redondo
+              }}
+            >
+              4
+            </Avatar>
+            <Typography
+              className="manrope-regular-20"
+              sx={{ display: "inline" }}
+              color="#000000"
+              marginRight="5px"
+            >
+              Step 4: Complete
+            </Typography>
+          </div>
+        </Grid>
+      </Grid>
+    </Stack>
   );
 }

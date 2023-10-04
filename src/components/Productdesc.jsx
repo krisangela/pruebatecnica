@@ -108,6 +108,7 @@ export default function BasicCard() {
                 </Grid>
               </Grid>
             </Grid>
+
             <Typography
               component="div"
               sx={{ mb: 1.5, marginTop: 2 }}

@@ -23,14 +23,23 @@ export default function App() {
   return (
     <>
       <Container sx={{ maxWidth: "none !important" }}>
-        <Headerb></Headerb>
+        <Headerb
+          style={{ position: "fixed", top: 0, width: "100%", zIndex: 1 }}
+        >
+          {/* Header fijo en la parte superior */}
+        </Headerb>
         <React.Fragment>
           <CssBaseline />
-          <Container maxWidth="xl">
-            <Box sx={{ bgcolor: "#cfe8fc", overflow: "hidden" }}>
+          <Container
+            maxWidth="xl"
+            style={{ position: "sticky", top: "64px" }}
+          >
+            <Box sx={{ bgcolor: "#FFFFFF", overflow: "hidden" }}>
               <Logo></Logo>
               <Letterhead></Letterhead>
-              <HorizontalLinearStepper></HorizontalLinearStepper>
+              <HorizontalLinearStepper
+                style={{ marginTop: "500px" }}
+              ></HorizontalLinearStepper>
             </Box>
           </Container>
         </React.Fragment>

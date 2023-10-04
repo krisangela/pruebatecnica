@@ -19,16 +19,22 @@
 }
 
 .dark-blue-medium{
-  background-color: var(--background-blue);
-  color: #FFFFFF;
   font-family: 'Manrope';
   font-weight: 500;
-}
-.dark-blue-regular{
+  font-size: 12px;
   background-color: var(--background-blue);
   color: #FFFFFF;
+
+
+}
+.dark-blue-regular{
   font-family: 'Manrope';
   font-weight: 400;
+  font-size: 16px;
+  background-color: var(--background-blue);
+  color: #FFFFFF;
+  
+ 
 }
 .white{
   background-color: #FFFFFF;
@@ -36,16 +42,19 @@
 }
 
 .titulo{
+  font-family: 'Manrope';
+  font-weight: 400;
   color: #000000;
   text-align: center;
-  font-family: 'Manrope';
-  font-weight: 400;
+  font-size: 48px;
+
 }
 .subtitulo{
+  font-family: 'Manrope';
   color: #4D5254;
   text-align: center;
-  font-family: 'Manrope';
   font-weight: 400;
+  font-size: 24px;
 }
 .step-listo{
   color: #85BF55;
@@ -60,4 +69,9 @@
 .manropebold{
   font-family: 'Manrope';
   font-weight: 700;
+}
+.manrope-regular-20{
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 20px;
 }
