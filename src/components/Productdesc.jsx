@@ -7,11 +7,14 @@ import { Grid } from "@mui/material";
 
 export default function BasicCard() {
   return (
-    <Card sx={{ minWidth: 275 }}>
-      <Card sx={{ padding: "16px" }}>
+    <Card sx={{ minWidth: 275, border: "none", boxShadow: "none" }}>
+      <Card sx={{ padding: "16px", backgroundColor: "#FAFAFA" }}>
         <CardContent
-          sx={{ borderTopLeftRadius: 10, borderTopRightRadius: 10 }}
-          className="prueba"
+          sx={{
+            borderTopLeftRadius: 10,
+            borderTopRightRadius: 10,
+            backgroundColor: "#FAFAFA",
+          }}
         >
           <Grid
             container

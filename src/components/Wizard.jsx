@@ -33,8 +33,6 @@ export function HorizontalLinearStepper() {
                 sx={{
                   height: "31px",
                   width: "31px",
-                  //  marginRight: "10px",
-                  //  marginLeft: "5px",
                 }}
                 style={{ color: "#85BF55" }}
               />
@@ -52,10 +50,7 @@ export function HorizontalLinearStepper() {
           </div>
         </Grid>
         {/* Segundo paso */}
-        <Grid
-          item
-          // xs={3}
-        >
+        <Grid item>
           <div
             style={{
               display: "flex",

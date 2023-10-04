@@ -18,9 +18,6 @@ body {
   --subtitle-gray: #4D5254;
   --separator-gray: #CFCFCF;
   --price-gray: #969696;
-  --stars-yellow: #FFC000;
-   
-   
 }
 
 
@@ -30,8 +27,6 @@ body {
   font-size: 12px;
   background-color: var(--background-blue);
   color: #FFFFFF;
-
-
 }
 .dark-blue-regular{
   font-family: 'Manrope';
@@ -39,21 +34,16 @@ body {
   font-size: 16px;
   background-color: var(--background-blue);
   color: #FFFFFF;
-  
- 
 }
 .white{
   background-color: #FFFFFF;
-
 }
-
 .titulo{
   font-family: 'Manrope';
   font-weight: 400;
   color: #000000;
   text-align: center;
   font-size: 48px;
-
 }
 .subtitulo{
   font-family: 'Manrope';
@@ -61,13 +51,6 @@ body {
   text-align: center;
   font-weight: 400;
   font-size: 24px;
-}
-.step-listo{
-  color: #85BF55;
-}
-.prueba{
-  background-color: #2358d3;
-
 }
 .graybg{
   background-color: #FAFAFA;

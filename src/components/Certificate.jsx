@@ -5,17 +5,15 @@ import Typography from "@mui/material/Typography";
 
 export default function Certificado() {
   return (
-    <Card sx={{ minWidth: 275, className: "prueba" }}>
-      <Card sx={{ padding: "16px", backgroundColor: "greenyellow" }}>
+    <Card sx={{ minWidth: 275, boxShadow: "none" }}>
+      <Card sx={{ padding: "16px", backgroundColor: "#FAFAFA" }}>
         <CardContent
           sx={{
-            className: "prueba",
             borderTopLeftRadius: 10,
             borderTopRightRadius: 10,
             borderBottomLeftRadius: 10,
             borderBottomRightRadius: 10,
           }}
-          className="prueba"
         >
           <Grid
             container
@@ -47,7 +45,7 @@ export default function Certificado() {
               <Grid
                 container
                 spacing={2}
-                sx={{ height: 48, className: "prueba" }}
+                sx={{ height: 48 }}
               >
                 <Grid
                   item
@@ -58,29 +56,29 @@ export default function Certificado() {
                     sx={{
                       display: "inline",
                       marginRight: "10px",
-                      className: "prueba",
                     }}
                     variant="body1"
-                    color="#333333"
+                    color="#4D5254"
                   >
                     If you are not completely thrilled with your Clarifion - We
                     have a
                   </Typography>
                   <Typography
                     variant="body1"
-                    color="#5BB59A"
-                    sx={{ display: "inline", className: "prueba" }}
+                    color="#4D5254"
+                    sx={{ display: "inline" }}
                   >
-                    30 day satisfaction guarantee.
+                    <span style={{ fontWeight: "bold" }}>
+                      30 day satisfaction guarantee.
+                    </span>{" "}
                   </Typography>
                   <Typography
                     sx={{
                       display: "inline",
                       marginRight: "10px",
-                      className: "prueba",
                     }}
                     variant="body1"
-                    color="#333333"
+                    color="#4D5254"
                   >
                     Please refer to our return policy at the bottom of the page
                     for more details. Happy Shopping!

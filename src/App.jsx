@@ -68,7 +68,7 @@ export default function App() {
               >
                 <BasicCard className="graybg"></BasicCard>
 
-                <RecipeReviewCard className="prueba"></RecipeReviewCard>
+                <RecipeReviewCard></RecipeReviewCard>
               </Grid>
               <Grid
                 item

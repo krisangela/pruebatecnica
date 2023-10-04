@@ -59,22 +59,23 @@ export default function BasicCard() {
                   <Typography
                     className="manropebold-14"
                     sx={{
-                      className: "manropebold-14",
+                      fontSize: "14px",
                       display: "inline",
                       marginRight: "10px",
                     }}
                     color="#333333"
                   >
-                    Ken T.
+                    <span style={{ fontWeight: "bold" }}>Ken T.</span>{" "}
                   </Typography>
                   <Typography
-                    variant="body1"
                     color="#5BB59A"
+                    fontSize={"12px"}
                     sx={{ display: "inline" }}
                   >
                     <img
                       src="src\assets\verified-check.svg"
                       alt="verified"
+                      style={{ marginRight: 10 + "px" }}
                     />
                     Verified Customer
                   </Typography>
@@ -84,6 +85,7 @@ export default function BasicCard() {
           </Grid>
 
           <Typography
+            color="#4D5254"
             component="div"
             sx={{ mb: 1.5, marginTop: 2 }}
           >
