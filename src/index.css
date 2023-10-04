@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+:root{
+  --background-blue:#252F3D;
+  --generic-blue: #2C7EF8;
+  --stock-blue: #37465A;
+  --circle-green: #85BF55;
+  --button-green: #59AE43;
+  --turquoise: #5BB59A;
+  --generic-black: #000000;
+  --username-black: #333333;
+  --red: #F82C2C;
+  --subtitle-gray: #4D5254;
+  --separator-gray: #CFCFCF;
+  --price-gray: #969696;
+  --stars-yellow: #FFC000;
+   font-family: 'Manrope'; 
+   
+}
+
+.dark-blue-medium{
+  background-color: var(--background-blue);
+  color: #FFFFFF;
+  font-family: 'Manrope';
+  font-weight: 500;
+}
+.dark-blue-regular{
+  background-color: var(--background-blue);
+  color: #FFFFFF;
+  font-family: 'Manrope';
+  font-weight: 400;
+}
+.white{
+  background-color: #FFFFFF;
+
+}
+
+.titulo{
+  color: #000000;
+  text-align: center;
+  font-family: 'Manrope';
+  font-weight: 400;
+}
+.subtitulo{
+  color: #4D5254;
+  text-align: center;
+  font-family: 'Manrope';
+  font-weight: 400;
+}
+.step-listo{
+  color: #85BF55;
+}
+.prueba{
+  background-color: #d32323;
+
+}
+.graybg{
+  background-color: #5BB59A;
+}
+.manropebold{
+  font-family: 'Manrope';
+  font-weight: 700;
+}

@@ -1,0 +1,84 @@
+import "./index.css";
+import Container from "@mui/material/Container";
+import { Footerb } from "./components/Footer.jsx";
+import { Headerb } from "./components/Header.jsx";
+import * as React from "react";
+import CssBaseline from "@mui/material/CssBaseline";
+import Box from "@mui/material/Box";
+import { Letterhead } from "./components/Letterhead";
+import { HorizontalLinearStepper } from "./components/Wizard";
+import { Logo } from "./components/Logo";
+import { Grid } from "@mui/material";
+import BasicCard from "./components/leftimage";
+import RecipeReviewCard from "./components/Review";
+import Certificado from "./components/Certificate";
+import Payment from "./components/Payments";
+import Claim from "./components/Claim";
+import Percent from "./components/Percentsave";
+import Benefits from "./components/Benefits";
+import Ptitle from "./components/Producttitle";
+import Pdescrip from "./components/Productdesc";
+
+export default function App() {
+  return (
+    <>
+      <Container sx={{ maxWidth: "none !important" }}>
+        <Headerb></Headerb>
+        <React.Fragment>
+          <CssBaseline />
+          <Container maxWidth="xl">
+            <Box sx={{ bgcolor: "#cfe8fc", overflow: "hidden" }}>
+              <Logo></Logo>
+              <Letterhead></Letterhead>
+              <HorizontalLinearStepper></HorizontalLinearStepper>
+            </Box>
+          </Container>
+        </React.Fragment>
+        <React.Fragment>
+          <CssBaseline />
+          <Container maxWidth="xl">
+            <Container
+              maxWidth="xl"
+              className="prueba"
+            >
+              <Grid
+                container
+                spacing={2}
+              >
+                <Grid
+                  item
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={6}
+                  xl={6}
+                >
+                  <BasicCard className="graybg"></BasicCard>
+
+                  <RecipeReviewCard></RecipeReviewCard>
+                </Grid>
+                <Grid
+                  item
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={6}
+                  xl={6}
+                >
+                  <Ptitle></Ptitle>
+                  <Pdescrip></Pdescrip>
+                  <Benefits></Benefits>
+                  <Percent></Percent>
+                  <Claim sx={{ width: "100%" }}></Claim>
+                  <Payment></Payment>
+                  <Certificado></Certificado>
+                </Grid>
+              </Grid>
+            </Container>
+          </Container>
+        </React.Fragment>
+        <Footerb position="bottom"></Footerb>
+      </Container>
+    </>
+  );
+}
