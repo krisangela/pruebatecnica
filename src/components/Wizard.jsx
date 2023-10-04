@@ -19,7 +19,13 @@ export function HorizontalLinearStepper() {
           item
           // xs={4}
         >
-          <div style={{ display: "flex", alignItems: "left" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "left",
+              className: "manrope-regular-20",
+            }}
+          >
             <Avatar
               sx={{
                 bgcolor: "#FFFFFF",
@@ -39,13 +45,12 @@ export function HorizontalLinearStepper() {
             </Avatar>
 
             <Typography
-              className="manrope-regular-20"
               sx={{ display: "inline" }}
               color="#000000"
               marginRight="5px"
               alignContent={"center"}
             >
-              Step 1: Cart Review
+              <span className=" manrope-regular-20">Step 1: Cart Review</span>
             </Typography>
           </div>
         </Grid>
@@ -71,27 +76,21 @@ export function HorizontalLinearStepper() {
                 sx={{
                   height: "31px",
                   width: "31px",
-                  //  marginRight: "10px",
-                  //  marginLeft: "5px",
                 }}
                 style={{ color: "#85BF55" }}
               />
             </Avatar>
             <Typography
-              className="manrope-regular-20"
               sx={{ display: "inline" }}
               color="#000000"
               marginRight="5px"
             >
-              Step 2: Payment
+              <span className=" manrope-regular-20">Step 2: Payment</span>
             </Typography>
           </div>
         </Grid>
         {/* Tercer paso */}
-        <Grid
-          item
-          // xs={3}
-        >
+        <Grid item>
           <div
             style={{
               display: "flex",
@@ -101,30 +100,25 @@ export function HorizontalLinearStepper() {
           >
             <Avatar
               sx={{
-                className: "manrope-regular-20",
                 bgcolor: "#2C7EF8",
                 height: "30px",
                 width: "30px",
                 marginRight: "10px",
               }}
             >
-              3
+              <span className=" manrope-regular-20">3</span>
             </Avatar>
             <Typography
-              className="manrope-regular-20"
               sx={{ display: "inline" }}
               color="#000000"
               marginRight="5px"
             >
-              Step 3: Confirm
+              <span className="manrope-bold-20">Step 3: Confirm</span>
             </Typography>
           </div>
         </Grid>
         {/* Cuarto paso */}
-        <Grid
-          item
-          // xs={3}
-        >
+        <Grid item>
           <div style={{ display: "flex", alignItems: "right" }}>
             <Avatar
               sx={{
@@ -144,12 +138,11 @@ export function HorizontalLinearStepper() {
               4
             </Avatar>
             <Typography
-              className="manrope-regular-20"
               sx={{ display: "inline" }}
               color="#000000"
               marginRight="5px"
             >
-              Step 4: Complete
+              <span className=" manrope-regular-20">Step 4: Complete</span>
             </Typography>
           </div>
         </Grid>

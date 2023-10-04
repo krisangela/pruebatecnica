@@ -6,7 +6,13 @@ import HalfRating from "./Rating";
 
 export default function BasicCard() {
   return (
-    <Card sx={{ minWidth: 275, boxShadow: "none" }}>
+    <Card
+      sx={{
+        minWidth: 275,
+        boxShadow: "none",
+        display: { xs: "none", sm: "none", md: "block" },
+      }}
+    >
       <Card sx={{ padding: "16px", backgroundColor: "#FAFAFA" }}>
         <CardContent
           sx={{ borderTopLeftRadius: 10, borderTopRightRadius: 10 }}
