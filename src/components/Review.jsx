@@ -33,7 +33,7 @@ export default function BasicCard() {
               <Avatar
                 sx={{ width: 48, height: 48 }}
                 aria-label="recipe"
-                src="public\assets\user.svg"
+                src="assets\user.svg"
               ></Avatar>
             </Grid>
             <Grid
@@ -79,7 +79,7 @@ export default function BasicCard() {
                     sx={{ display: "inline" }}
                   >
                     <img
-                      src="public\assets\verified-check.svg"
+                      src="assets\verified-check.svg"
                       alt="verified"
                       style={{ marginRight: 10 + "px" }}
                     />

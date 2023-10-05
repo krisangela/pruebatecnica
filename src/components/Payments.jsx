@@ -34,7 +34,7 @@ const cardContent = (
         >
           <Typography>
             <img
-              src="public\assets\lock-gray.svg"
+              src="assets\lock-gray.svg"
               alt="candado"
               style={{ marginRight: 10 + "px" }}
             />
@@ -55,37 +55,37 @@ const cardContent = (
           sm={5}
         >
           <img
-            src="public\assets\visa.svg"
+            src="assets\visa.svg"
             alt="visa"
             style={{ marginRight: 10 + "px", height: "20px" }}
           />
           <img
-            src="public\assets\shoppay.svg"
+            src="assets\shoppay.svg"
             alt="shoppay"
             style={{ marginRight: 10 + "px" }}
           />
           <img
-            src="public\assets\paypal.svg"
+            src="assets\paypal.svg"
             alt="paypal"
             style={{ marginRight: 10 + "px" }}
           />
           <img
-            src="public\assets\mastercard.svg"
+            src="assets\mastercard.svg"
             alt="mastercard"
             style={{ marginRight: 10 + "px" }}
           />
           <img
-            src="public\assets\gpay.svg"
+            src="assets\gpay.svg"
             alt="gpay"
             style={{ marginRight: 10 + "px" }}
           />
           <img
-            src="public\assets\applepay.svg"
+            src="assets\applepay.svg"
             alt="applepay"
             style={{ marginRight: 10 + "px" }}
           />
           <img
-            src="public\assets\amex.svg"
+            src="assets\amex.svg"
             alt="amex"
             style={{ marginRight: 10 + "px" }}
           />
@@ -117,7 +117,7 @@ const secondcardContent = (
         >
           <Typography>
             <img
-              src="public\assets\lock-gray.svg"
+              src="assets\lock-gray.svg"
               alt="candado"
               style={{ marginRight: 10 + "px" }}
             />
@@ -142,37 +142,37 @@ const secondcardContent = (
             sm={12}
           >
             <img
-              src="public\assets\visa.svg"
+              src="assets\visa.svg"
               alt="visa"
               style={{ marginRight: 10 + "px", height: "20px" }}
             />
             <img
-              src="public\assets\shoppay.svg"
+              src="assets\shoppay.svg"
               alt="shoppay"
               style={{ marginRight: 10 + "px" }}
             />
             <img
-              src="public\assets\paypal.svg"
+              src="assets\paypal.svg"
               alt="paypal"
               style={{ marginRight: 10 + "px" }}
             />
             <img
-              src="public\assets\mastercard.svg"
+              src="assets\mastercard.svg"
               alt="mastercard"
               style={{ marginRight: 10 + "px" }}
             />
             <img
-              src="public\assets\gpay.svg"
+              src="assets\gpay.svg"
               alt="gpay"
               style={{ marginRight: 10 + "px" }}
             />
             <img
-              src="public\assets\applepay.svg"
+              src="assets\applepay.svg"
               alt="applepay"
               style={{ marginRight: 10 + "px" }}
             />
             <img
-              src="public\assets\amex.svg"
+              src="assets\amex.svg"
               alt="amex"
               style={{ marginRight: 10 + "px" }}
             />

@@ -32,7 +32,7 @@ export default function BasicCard() {
               <img
                 width={"134px"}
                 height={"134px"}
-                src="public\assets\product-blue.svg"
+                src="assets\product-blue.svg"
                 alt="verified"
               />
             </Grid>
@@ -103,7 +103,7 @@ export default function BasicCard() {
                       color="#333333"
                     >
                       <img
-                        src="public\assets\left-in-stock.svg"
+                        src="assets\left-in-stock.svg"
                         alt="verified"
                       />{" "}
                       12 left in Stock

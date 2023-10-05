@@ -20,7 +20,7 @@ export function Logo() {
             xl={6}
           >
             <img
-              src="public\assets\clarifion-logo.svg"
+              src="assets\clarifion-logo.svg"
               alt="logo"
               style={{ marginRight: 10 + "px" }}
             />

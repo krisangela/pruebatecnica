@@ -53,7 +53,7 @@ export function Footerb() {
                     align="right"
                   >
                     <img
-                      src="public\assets\lock-white.svg"
+                      src="assets\lock-white.svg"
                       alt="candado"
                       style={{ marginRight: 10 + "px" }}
                     />
@@ -112,7 +112,7 @@ export function Footerb() {
                     align="center"
                   >
                     <img
-                      src="public\assets\lock-white.svg"
+                      src="assets\lock-white.svg"
                       alt="candado"
                       style={{ marginRight: 10 + "px" }}
                     />
