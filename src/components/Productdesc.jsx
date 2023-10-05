@@ -140,7 +140,7 @@ export default function BasicCard() {
           display: {
             xs: "block",
             sm: "block",
-            md: "block",
+            md: "none",
             lg: "none",
             xl: "none",
           },
