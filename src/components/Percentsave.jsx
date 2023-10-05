@@ -47,41 +47,15 @@ export default function BasicButtons() {
               marginRight="5px"
             >
               Save
-            </Typography>
-            <Typography
-              marginRight="5px"
-              color="#2C7EF8"
-              sx={{ display: "inline" }}
-            >
-              53%
-            </Typography>
-            <Typography
-              marginRight="5px"
-              sx={{ display: "inline" }}
-              color="#000000"
-            >
-              and get
-            </Typography>
-            <Typography
-              marginRight="5px"
-              sx={{ display: "inline" }}
-              color="#2C7EF8"
-            >
-              6 extra Clarifision
-            </Typography>
-            <Typography
-              marginRight="5px"
-              sx={{ display: "inline" }}
-              color="#000000"
-            >
-              for only
-            </Typography>
-            <Typography
-              marginRight="5px"
-              sx={{ display: "inline" }}
-              color="#2C7EF8"
-            >
-              $14 Each.
+              <span> Save </span>
+              <span className="manrope-blue-regular-32"> 53$ </span>
+              <span> and get </span>
+              <span className="manrope-blue-regular-32">
+                {" "}
+                6 extra Clarifion{" "}
+              </span>
+              <span> for only </span>
+              <span className="manrope-blue-regular-32"> $14 each. </span>
             </Typography>
           </Button>
         </Grid>

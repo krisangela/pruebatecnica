@@ -18,25 +18,30 @@ const cardContent = (
           xs={2}
           sm={2}
         >
-          <Typography>Free Shipping </Typography>
+          <Typography style={{ textAlign: "center", fontSize: "1vw" }}>
+            Free Shipping{" "}
+          </Typography>
         </Grid>
         <Grid
           item
-          xs={0.2}
-          sm={0.2}
+          xs={0.1}
+          sm={0.1}
         >
-          <Typography> |</Typography>
+          <Typography style={{ textAlign: "center", fontSize: "1vw" }}>
+            {" "}
+            |
+          </Typography>
         </Grid>
         <Grid
           item
           xs={4.5}
           sm={4.5}
         >
-          <Typography>
+          <Typography style={{ textAlign: "center", fontSize: "0.9vw" }}>
             <img
               src="assets\lock-gray.svg"
               alt="candado"
-              style={{ marginRight: 10 + "px" }}
+              style={{ marginRight: 5 + "px" }}
             />
             Secure 256-bit SSL encryption.
           </Typography>
@@ -46,7 +51,10 @@ const cardContent = (
           xs={0.2}
           sm={0.2}
         >
-          <Typography> |</Typography>
+          <Typography style={{ textAlign: "center", fontSize: "1vw" }}>
+            {" "}
+            |
+          </Typography>
         </Grid>
 
         <Grid
@@ -57,37 +65,37 @@ const cardContent = (
           <img
             src="assets\visa.svg"
             alt="visa"
-            style={{ marginRight: 10 + "px", height: "20px" }}
+            style={{ marginRight: 5 + "px", height: "20px" }}
           />
           <img
             src="assets\shoppay.svg"
             alt="shoppay"
-            style={{ marginRight: 10 + "px" }}
+            style={{ marginRight: 5 + "px" }}
           />
           <img
             src="assets\paypal.svg"
             alt="paypal"
-            style={{ marginRight: 10 + "px" }}
+            style={{ marginRight: 5 + "px" }}
           />
           <img
             src="assets\mastercard.svg"
             alt="mastercard"
-            style={{ marginRight: 10 + "px" }}
+            style={{ marginRight: 5 + "px" }}
           />
           <img
             src="assets\gpay.svg"
             alt="gpay"
-            style={{ marginRight: 10 + "px" }}
+            style={{ marginRight: 5 + "px" }}
           />
           <img
             src="assets\applepay.svg"
             alt="applepay"
-            style={{ marginRight: 10 + "px" }}
+            style={{ marginRight: 5 + "px" }}
           />
           <img
             src="assets\amex.svg"
             alt="amex"
-            style={{ marginRight: 10 + "px" }}
+            style={{ marginRight: 5 + "px" }}
           />
         </Grid>
       </Grid>
@@ -104,18 +112,20 @@ const secondcardContent = (
       >
         <Grid
           item
-          xs={4}
-          sm={4}
+          xs={3.5}
+          sm={3.5}
         >
-          <Typography>Free Shipping </Typography>
+          <Typography style={{ textAlign: "center", fontSize: "2.9vw" }}>
+            Free Shipping |{" "}
+          </Typography>
         </Grid>
 
         <Grid
           item
-          xs={8}
-          sm={8}
+          xs={8.5}
+          sm={8.5}
         >
-          <Typography>
+          <Typography style={{ textAlign: "center", fontSize: "2.7vw" }}>
             <img
               src="assets\lock-gray.svg"
               alt="candado"
@@ -124,11 +134,13 @@ const secondcardContent = (
             Secure 256-bit SSL encryption.
           </Typography>
         </Grid>
+
         <Grid
           container
           alignItems="center"
           display="flex"
         >
+          <hr style={{ border: ".1px solid light-gray", width: "100%" }} />
           <Grid item>
             <Typography>
               {" "}
@@ -140,36 +152,43 @@ const secondcardContent = (
             item
             xs={12}
             sm={12}
+            alignItems={"center"}
+            alignContent={"center"}
+            alignSelf={"center"}
           >
             <img
               src="assets\visa.svg"
               alt="visa"
-              style={{ marginRight: 10 + "px", height: "20px" }}
+              style={{
+                marginRight: 5 + "px",
+                height: "20px",
+                marginLeft: 15 + "px",
+              }}
             />
             <img
               src="assets\shoppay.svg"
               alt="shoppay"
-              style={{ marginRight: 10 + "px" }}
+              style={{ marginRight: 5 + "px" }}
             />
             <img
               src="assets\paypal.svg"
               alt="paypal"
-              style={{ marginRight: 10 + "px" }}
+              style={{ marginRight: 5 + "px" }}
             />
             <img
               src="assets\mastercard.svg"
               alt="mastercard"
-              style={{ marginRight: 10 + "px" }}
+              style={{ marginRight: 5 + "px" }}
             />
             <img
               src="assets\gpay.svg"
               alt="gpay"
-              style={{ marginRight: 10 + "px" }}
+              style={{ marginRight: 5 + "px" }}
             />
             <img
               src="assets\applepay.svg"
               alt="applepay"
-              style={{ marginRight: 10 + "px" }}
+              style={{ marginRight: 5 + "px" }}
             />
             <img
               src="assets\amex.svg"

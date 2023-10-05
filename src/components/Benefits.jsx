@@ -17,7 +17,6 @@ const textArray = [
 
 export default function InteractiveList() {
   const [dense] = React.useState(false);
-  //   const [secondary, setSecondary] = React.useState(false);
 
   const generate = () => {
     return textArray.map((text, index) => (
