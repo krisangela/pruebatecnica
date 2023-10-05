@@ -20,7 +20,7 @@ export function Logo() {
             xl={6}
           >
             <img
-              src="src\assets\clarifion-logo.svg"
+              src="public\assets\clarifion-logo.svg"
               alt="logo"
               style={{ marginRight: 10 + "px" }}
             />
@@ -39,12 +39,12 @@ export function Logo() {
               justifyContent="right"
             >
               <img
-                src="src\assets\mcafee.svg"
+                src="public\assets\mcafee.svg"
                 alt="mcafee"
                 style={{ marginRight: 10 + "px" }}
               />
               <img
-                src="src\assets\norton-antivirus.svg"
+                src="public\assets\norton-antivirus.svg"
                 alt="norton"
                 style={{ marginRight: 10 + "px" }}
               />

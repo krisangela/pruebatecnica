@@ -25,7 +25,7 @@ export default function BasicCard() {
     >
       <CardContent sx={{ backgroundColor: backgroundColor, border: "none" }}>
         <img
-          src="src\assets\product-full.svg"
+          src="public\assets\product-full.svg"
           style={{ width: "100%", height: "100%" }}
           alt="Custom Icon"
         />

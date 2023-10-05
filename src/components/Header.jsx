@@ -76,7 +76,7 @@ export function Headerb() {
                       }}
                     >
                       <img
-                        src="src\assets\check-flower.svg"
+                        src="public\assets\check-flower.svg"
                         alt="icono"
                         style={{
                           marginRight: 10 + "px",
@@ -108,7 +108,7 @@ export function Headerb() {
                       }}
                     >
                       <img
-                        src="src\assets\truck.svg"
+                        src="public\assets\truck.svg"
                         alt="icono"
                         style={{
                           marginRight: 10 + "px",
@@ -138,7 +138,7 @@ export function Headerb() {
                       }}
                     >
                       <img
-                        src="src\assets\heart.svg"
+                        src="public\assets\heart.svg"
                         alt="icono"
                         style={{
                           marginRight: 10 + "px",
@@ -162,7 +162,7 @@ export function Headerb() {
                   <Grid item>
                     <div style={{ display: "flex", alignItems: "right" }}>
                       <img
-                        src="src\assets\check-cicle.svg"
+                        src="public\assets\check-cicle.svg"
                         alt="icono"
                         style={{
                           marginRight: 10 + "px",
@@ -251,7 +251,7 @@ export function Headerb() {
                         }}
                       >
                         <img
-                          src="src\assets\check-flower.svg"
+                          src="public\assets\check-flower.svg"
                           alt="icono"
                           style={{
                             marginRight: 10 + "px",
@@ -291,7 +291,7 @@ export function Headerb() {
                         }}
                       >
                         <img
-                          src="src\assets\truck.svg"
+                          src="public\assets\truck.svg"
                           alt="icono"
                           style={{
                             marginRight: 10 + "px",
@@ -329,7 +329,7 @@ export function Headerb() {
                         }}
                       >
                         <img
-                          src="src\assets\heart.svg"
+                          src="public\assets\heart.svg"
                           alt="icono"
                           style={{
                             marginRight: 10 + "px",
@@ -367,7 +367,7 @@ export function Headerb() {
                         }}
                       >
                         <img
-                          src="src\assets\check-cicle.svg"
+                          src="public\assets\check-cicle.svg"
                           alt="icono"
                           style={{
                             marginRight: 10 + "px",

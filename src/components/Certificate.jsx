@@ -37,7 +37,7 @@ export default function Certificado() {
                 <img
                   width={"88px"}
                   height={"88px"}
-                  src="src\assets\guarantee.svg"
+                  src="public\assets\guarantee.svg"
                   alt="verified"
                 />
               </Grid>
@@ -133,7 +133,7 @@ export default function Certificado() {
                 <img
                   width={"88px"}
                   height={"88px"}
-                  src="src\assets\guarantee.svg"
+                  src="public\assets\guarantee.svg"
                   alt="verified"
                 />
               </Grid>
