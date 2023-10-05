@@ -57,7 +57,7 @@ export default function App() {
               <Logo></Logo>
               <Letterhead></Letterhead>
               <HorizontalLinearStepper
-                style={{ marginTop: "500px" }}
+              // style={{ marginTop: "500px" }}
               ></HorizontalLinearStepper>
             </Grid>
             <Grid
@@ -133,7 +133,7 @@ export default function App() {
               <Logo></Logo>
               <Letterhead></Letterhead>
               <HorizontalLinearStepper
-                style={{ marginTop: "500px" }}
+              // style={{ marginTop: "500px" }}
               ></HorizontalLinearStepper>
             </Grid>
             <Grid

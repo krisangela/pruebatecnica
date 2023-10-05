@@ -94,18 +94,134 @@ const cardContent = (
     </CardContent>
   </React.Fragment>
 );
+const secondcardContent = (
+  <React.Fragment>
+    <CardContent>
+      <Grid
+        container
+        alignItems="center"
+        display="flex"
+      >
+        <Grid
+          item
+          xs={4}
+          sm={4}
+        >
+          <Typography>Free Shipping </Typography>
+        </Grid>
+
+        <Grid
+          item
+          xs={8}
+          sm={8}
+        >
+          <Typography>
+            <img
+              src="src\assets\lock-gray.svg"
+              alt="candado"
+              style={{ marginRight: 10 + "px" }}
+            />
+            Secure 256-bit SSL encryption.
+          </Typography>
+        </Grid>
+        <Grid
+          container
+          alignItems="center"
+          display="flex"
+        >
+          <Grid item>
+            <Typography>
+              {" "}
+              <br />
+            </Typography>
+          </Grid>
+
+          <Grid
+            item
+            xs={12}
+            sm={12}
+          >
+            <img
+              src="src\assets\visa.svg"
+              alt="visa"
+              style={{ marginRight: 10 + "px", height: "20px" }}
+            />
+            <img
+              src="src\assets\shoppay.svg"
+              alt="shoppay"
+              style={{ marginRight: 10 + "px" }}
+            />
+            <img
+              src="src\assets\paypal.svg"
+              alt="paypal"
+              style={{ marginRight: 10 + "px" }}
+            />
+            <img
+              src="src\assets\mastercard.svg"
+              alt="mastercard"
+              style={{ marginRight: 10 + "px" }}
+            />
+            <img
+              src="src\assets\gpay.svg"
+              alt="gpay"
+              style={{ marginRight: 10 + "px" }}
+            />
+            <img
+              src="src\assets\applepay.svg"
+              alt="applepay"
+              style={{ marginRight: 10 + "px" }}
+            />
+            <img
+              src="src\assets\amex.svg"
+              alt="amex"
+              style={{ marginRight: 10 + "px" }}
+            />
+          </Grid>
+        </Grid>
+      </Grid>
+    </CardContent>
+  </React.Fragment>
+);
 
 export default function OutlinedCard() {
   return (
     <>
-      <CardContent>
+      <CardContent
+        sx={{
+          display: { xs: "none", sm: "none", md: "block" },
+        }}
+      >
         <Box sx={{ minWidth: 275 }}>
           <Card variant="outlined">{cardContent}</Card>
         </Box>
         <Typography alignContent={"center"}>
-          <span className="manrope-red-medium-18">
-            NO THANKS, I DON’T WANT THIS.
-          </span>
+          <Box
+            textAlign="center"
+            marginTop="20px"
+          >
+            <span className="manrope-red-medium-18">
+              NO THANKS, I DON’T WANT THIS.
+            </span>
+          </Box>
+        </Typography>
+      </CardContent>
+      <CardContent
+        sx={{
+          display: { xs: "block", sm: "block", md: "none" },
+        }}
+      >
+        <Box sx={{ minWidth: 275 }}>
+          <Card variant="outlined">{secondcardContent}</Card>
+        </Box>
+        <Typography alignContent={"center"}>
+          <Box
+            textAlign="center"
+            marginTop="20px"
+          >
+            <span className="manrope-red-medium-18">
+              NO THANKS, I DON’T WANT THIS.
+            </span>
+          </Box>
         </Typography>
       </CardContent>
     </>
