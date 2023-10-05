@@ -13,7 +13,7 @@ export function HorizontalLinearStepper() {
           display: {
             xs: "none",
             sm: "none",
-            md: "none",
+            md: "block",
             lg: "block",
             xl: "block",
           },
@@ -163,7 +163,7 @@ export function HorizontalLinearStepper() {
           display: {
             xs: "block",
             sm: "block",
-            md: "block",
+            md: "none",
             lg: "none",
             xl: "none",
           },
@@ -175,7 +175,10 @@ export function HorizontalLinearStepper() {
           justifyContent={"space-between"}
         >
           {/* Primer paso */}
-          <Grid item>
+          <Grid
+            item
+            xs={3}
+          >
             <div
               style={{
                 display: "flex",
@@ -203,15 +206,22 @@ export function HorizontalLinearStepper() {
               </Avatar>
 
               <Typography
-                sx={{ display: "inline" }}
+                sx={{
+                  display: "inline",
+                  alignSelf: "center",
+                  fontSize: "2.5vw",
+                }}
                 color="#000000"
               >
-                <span className="manrope-regular-20">Cart Review</span>
+                <span>Cart Review</span>
               </Typography>
             </div>
           </Grid>
           {/* Segundo paso */}
-          <Grid item>
+          <Grid
+            item
+            xs={3}
+          >
             <div
               style={{
                 display: "flex",
@@ -238,15 +248,22 @@ export function HorizontalLinearStepper() {
                 />
               </Avatar>
               <Typography
-                sx={{ display: "inline" }}
+                sx={{
+                  display: "inline",
+                  alignSelf: "center",
+                  fontSize: "2.5vw",
+                }}
                 color="#000000"
               >
-                <span className="manrope-regular-20">Payment</span>
+                <span>Payment</span>
               </Typography>
             </div>
           </Grid>
           {/* Tercer paso */}
-          <Grid item>
+          <Grid
+            item
+            xs={3}
+          >
             <div
               style={{
                 display: "flex",
@@ -259,23 +276,30 @@ export function HorizontalLinearStepper() {
               <Avatar
                 sx={{
                   bgcolor: "#2C7EF8",
-                  height: "30px",
-                  width: "30px",
+                  height: "27px",
+                  width: "27px",
                   marginBottom: "5px",
                 }}
               >
-                <span className="manrope-regular-20">3</span>
+                <span>3</span>
               </Avatar>
               <Typography
-                sx={{ display: "inline" }}
+                sx={{
+                  display: "inline",
+                  alignSelf: "center",
+                  fontSize: "2.5vw",
+                }}
                 color="#000000"
               >
-                <span className="manrope-bold-20">Confirm</span>
+                <span className="manropebold">Confirm</span>
               </Typography>
             </div>
           </Grid>
           {/* Cuarto paso */}
-          <Grid item>
+          <Grid
+            item
+            xs={3}
+          >
             <div
               style={{
                 display: "flex",
@@ -289,8 +313,8 @@ export function HorizontalLinearStepper() {
                 sx={{
                   bgcolor: "#FFFFFF",
                   border: "0.1px solid  #2C7EF8",
-                  height: "30px",
-                  width: "30px",
+                  height: "27px",
+                  width: "27px",
                   marginRight: "10px",
                   borderWidth: "1px",
                   color: "#2C7EF8",
@@ -302,10 +326,14 @@ export function HorizontalLinearStepper() {
                 4
               </Avatar>
               <Typography
-                sx={{ display: "inline" }}
+                sx={{
+                  display: "inline",
+                  alignSelf: "center",
+                  fontSize: "2.5vw",
+                }}
                 color="#000000"
               >
-                <span className="manrope-regular-20">Complete</span>
+                <span>Complete</span>
               </Typography>
             </div>
           </Grid>
