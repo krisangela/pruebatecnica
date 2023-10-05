@@ -39,12 +39,12 @@ export function Logo() {
               justifyContent="right"
             >
               <img
-                src="public\assets\mcafee.svg"
+                src="assets\mcafee.svg"
                 alt="mcafee"
                 style={{ marginRight: 10 + "px" }}
               />
               <img
-                src="public\assets\norton-antivirus.svg"
+                src=".\assets\norton-antivirus.svg"
                 alt="norton"
                 style={{ marginRight: 10 + "px" }}
               />
