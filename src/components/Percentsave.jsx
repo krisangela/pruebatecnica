@@ -46,7 +46,6 @@ export default function BasicButtons() {
               color="#000000"
               marginRight="5px"
             >
-              Save
               <span> Save </span>
               <span className="manrope-blue-regular-32"> 53$ </span>
               <span> and get </span>

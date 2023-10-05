@@ -32,7 +32,12 @@ export default function App() {
       >
         <Headerb
           position="top"
-          style={{ position: "fixed", top: 0, width: "100%", zIndex: 10 }}
+          style={{
+            position: "fixed",
+            top: 0,
+            width: "100%",
+            zIndex: 10,
+          }}
         >
           {/* Header fijo en la parte superior */}
         </Headerb>
@@ -41,6 +46,7 @@ export default function App() {
           style={{ paddingTop: "64px", paddingBottom: "64px" }}
         >
           <Grid
+            className="graybg"
             container
             spacing={2}
           >
@@ -103,7 +109,80 @@ export default function App() {
       <Container
         sx={{
           maxWidth: "none !important",
-          display: { xs: "block", sm: "block", md: "none" },
+          display: { xs: "block", sm: "none", md: "none" },
+        }}
+      >
+        <Headerb
+          position="top"
+          style={{ position: "fixed", top: 0, width: "100%", zIndex: 50 }}
+        >
+          {/* Header fijo en la parte superior */}
+        </Headerb>
+        <Container
+          maxWidth="xl"
+          style={{ paddingTop: "80px", paddingBottom: "80px" }}
+        >
+          <Grid
+            container
+            spacing={2}
+          >
+            <Grid
+              item
+              xs={12}
+              style={{
+                position: "sticky",
+                top: "88px",
+                zIndex: 1,
+                backgroundColor: "#fff",
+              }}
+            >
+              <Logo></Logo>
+              <Letterhead></Letterhead>
+              <HorizontalLinearStepper
+              // style={{ marginTop: "500px" }}
+              ></HorizontalLinearStepper>
+              <Ptitle></Ptitle>
+            </Grid>
+            <Grid
+              container
+              spacing={2}
+            >
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={6}
+                lg={6}
+                xl={6}
+              >
+                <BasicCard sx={{ className: "white" }}></BasicCard>
+
+                <RecipeReviewCard></RecipeReviewCard>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={6}
+                lg={6}
+                xl={6}
+              >
+                <Pdescrip></Pdescrip>
+                <Benefits></Benefits>
+                <Percent></Percent>
+                <Claim sx={{ width: "100%" }}></Claim>
+                <Payment></Payment>
+                <Certificado></Certificado>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Container>
+        <Footerb position="bottom"></Footerb>
+      </Container>
+      <Container
+        sx={{
+          maxWidth: "none !important",
+          display: { xs: "none", sm: "block", md: "none" },
         }}
       >
         <Headerb

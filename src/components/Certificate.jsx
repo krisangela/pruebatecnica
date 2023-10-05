@@ -1,9 +1,17 @@
-import { Grid } from "@mui/material";
+import { Grid, useMediaQuery } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
 export default function Certificado() {
+  const isSmallScreen = useMediaQuery("(max-width:600px)");
+  const isMediumScreen = useMediaQuery(
+    "(min-width:601px) and (max-width:1200px)"
+  );
+
+  const height = isSmallScreen ? "120px" : isMediumScreen ? "200px" : "160px";
+  const imgheight = isSmallScreen ? "80vw" : isMediumScreen ? "200px" : "160px";
+
   return (
     <>
       <Card
@@ -110,44 +118,37 @@ export default function Certificado() {
             display: { xs: "block", sm: "block", md: "none" },
           }}
         >
-          <CardContent
-            sx={{
-              borderTopLeftRadius: 10,
-              borderTopRightRadius: 10,
-              borderBottomLeftRadius: 10,
-              borderBottomRightRadius: 10,
-            }}
-          >
+          <CardContent>
             <Grid
               container
               spacing={0}
             >
               <Grid
                 item
-                xs={3}
-                sm={3}
+                xs={4}
+                sm={4}
                 md={5}
                 lg={2}
                 xl={2}
               >
                 <img
-                  width={"88px"}
-                  height={"88px"}
+                  width={imgheight}
+                  height={imgheight}
                   src="assets\guarantee.svg"
                   alt="verified"
                 />
               </Grid>
               <Grid
                 item
-                xs={9}
-                sm={9}
+                xs={8}
+                sm={8}
                 md={7}
                 lg={10}
                 xl={10}
               >
                 <Grid
                   container
-                  sx={{ height: "100px" }}
+                  sx={{ height: height }}
                 >
                   <Grid
                     item
@@ -159,6 +160,7 @@ export default function Certificado() {
                         display: "inline",
                         marginRight: "10px",
                       }}
+                      style={{ fontSize: "3vw" }}
                       variant="body1"
                       color="#4D5254"
                     >
@@ -169,12 +171,14 @@ export default function Certificado() {
                       variant="body1"
                       color="#4D5254"
                       sx={{ display: "inline" }}
+                      style={{ fontSize: "3vw" }}
                     >
                       <span style={{ fontWeight: "bold" }}>
                         30 day satisfaction guarantee.
                       </span>{" "}
                     </Typography>
                     <Typography
+                      style={{ fontSize: "3vw" }}
                       sx={{
                         display: "inline",
                         marginRight: "10px",

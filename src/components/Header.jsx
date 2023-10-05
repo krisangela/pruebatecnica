@@ -61,7 +61,11 @@ export function Headerb() {
               <Stack
                 spacing={2}
                 direction="row"
-                style={{ marginTop: "20px", marginBottom: "20px" }}
+                style={{
+                  marginTop: "20px",
+                  marginBottom: "20px",
+                  backgroundColor: "252F3D",
+                }}
               >
                 <Grid
                   container
@@ -69,7 +73,10 @@ export function Headerb() {
                   justifyContent={"space-between"}
                 >
                   {/* Primer elemento */}
-                  <Grid item>
+                  <Grid
+                    item
+                    backgroundColor="#252F3D"
+                  >
                     <div
                       style={{
                         display: "flex",
