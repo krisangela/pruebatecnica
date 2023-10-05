@@ -1,4 +1,5 @@
 import { Grid } from "@mui/material";
+
 export function Logo() {
   return (
     <>
@@ -22,7 +23,11 @@ export function Logo() {
             <img
               src="assets\clarifion-logo.svg"
               alt="logo"
-              style={{ marginRight: 10 + "px" }}
+              style={{
+                marginRight: 10 + "px",
+                maxWidth: "80%",
+                height: "auto",
+              }}
             />
           </Grid>
 
@@ -36,17 +41,25 @@ export function Logo() {
           >
             <Grid
               container
-              justifyContent="right"
+              justifyContent="flex-end"
             >
               <img
                 src="assets\mcafee.svg"
                 alt="mcafee"
-                style={{ marginRight: 10 + "px" }}
+                style={{
+                  marginRight: 10 + "px",
+                  maxWidth: "30%",
+                  height: "auto",
+                }}
               />
               <img
-                src=".\assets\norton-antivirus.svg"
+                src="assets\norton-antivirus.svg"
                 alt="norton"
-                style={{ marginRight: 10 + "px" }}
+                style={{
+                  marginRight: 10 + "px",
+                  maxWidth: "30%",
+                  height: "auto",
+                }}
               />
             </Grid>
           </Grid>

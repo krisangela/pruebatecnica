@@ -8,6 +8,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import ArrowBackIosTwoToneIcon from "@mui/icons-material/ArrowBackIosTwoTone";
 import ArrowForwardIosTwoToneIcon from "@mui/icons-material/ArrowForwardIosTwoTone";
@@ -45,6 +46,7 @@ export function Headerb() {
             sm: "none",
             md: "none",
             lg: "block",
+            xl: "block",
           },
         }}
       >
@@ -188,13 +190,12 @@ export function Headerb() {
           </Toolbar>
         </AppBar>
       </Box>
-      {/* header pantalla pequena */}
+      {/* header pantalla xs, sm, md */}
       <Box
         position="fixed"
         top="0"
         sx={{
           position: "fixed",
-
           top: 0,
           left: 0,
           width: "100%",
@@ -219,18 +220,9 @@ export function Headerb() {
                   spacing={0}
                   justifyContent={"space-between"}
                 >
-                  {/* <div>
-                    <button
-                      onClick={() => handleGridChange(activeGrid - 1)}
-                      // disabled={activeGrid === 1}
-                    >
-                      ← Anterior
-                    </button>
-                  </div> */}
                   <div>
                     <IconButton
                       onClick={() => handleGridChange(activeGrid - 1)}
-                      // disabled={activeGrid === 1}
                     >
                       <ArrowBackIosTwoToneIcon style={{ color: "white" }} />
                     </IconButton>
