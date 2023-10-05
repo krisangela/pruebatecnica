@@ -68,17 +68,17 @@ body {
 .manrope-regular-20{
   font-family: 'Manrope';
   font-weight: 400;
-  font-size: 20px;
+ 
 }
 .manrope-bold-20{
   font-family: 'Manrope';
   font-weight: 700;
-  font-size: 20px;
+  
 }
 .manropebold-14{
   font-family: 'Manrope';
   font-weight: 700;
-  font-size: 14px;
+  
 }
 
 .manropewhite{
@@ -102,5 +102,5 @@ body {
   font-family: 'Manrope';
   font-weight: 500;
   color: #F82C2C;
-  font-size: 18px;
+  
 }

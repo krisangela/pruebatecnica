@@ -135,6 +135,7 @@ export default function App() {
               <HorizontalLinearStepper
               // style={{ marginTop: "500px" }}
               ></HorizontalLinearStepper>
+              <Ptitle></Ptitle>
             </Grid>
             <Grid
               container
@@ -148,7 +149,6 @@ export default function App() {
                 lg={6}
                 xl={6}
               >
-                <Ptitle></Ptitle>
                 <BasicCard sx={{ className: "white" }}></BasicCard>
 
                 <RecipeReviewCard></RecipeReviewCard>
