@@ -85,6 +85,7 @@ export default function BasicCard() {
                     </Typography>
                   </Grid>
                   <Grid
+                    zIndex={0}
                     item
                     xs={12}
                     //   sx={{ height: 10 }}

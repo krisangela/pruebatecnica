@@ -1,5 +1,4 @@
 import { Grid } from "@mui/material";
-
 export function Logo() {
   return (
     <>

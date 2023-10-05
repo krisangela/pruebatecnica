@@ -10,22 +10,27 @@ const cardContent = (
     <CardContent>
       <Grid
         container
-        spacing={2}
         alignItems="center"
         display="flex"
       >
         <Grid
           item
-          xs={2.3}
-          sm={2.3}
+          xs={2}
+          sm={2}
         >
-          <Typography>Free Shipping</Typography>
+          <Typography>Free Shipping </Typography>
         </Grid>
-
         <Grid
           item
-          xs={5}
-          sm={5}
+          xs={0.2}
+          sm={0.2}
+        >
+          <Typography> |</Typography>
+        </Grid>
+        <Grid
+          item
+          xs={4.5}
+          sm={4.5}
         >
           <Typography>
             <img
@@ -36,11 +41,18 @@ const cardContent = (
             Secure 256-bit SSL encryption.
           </Typography>
         </Grid>
+        <Grid
+          item
+          xs={0.2}
+          sm={0.2}
+        >
+          <Typography> |</Typography>
+        </Grid>
 
         <Grid
           item
-          xs={4.7}
-          sm={4.7}
+          xs={5}
+          sm={5}
         >
           <img
             src="src\assets\visa.svg"
@@ -90,7 +102,11 @@ export default function OutlinedCard() {
         <Box sx={{ minWidth: 275 }}>
           <Card variant="outlined">{cardContent}</Card>
         </Box>
-        <Typography>NO THANKS, I DON’T WANT THIS.</Typography>
+        <Typography alignContent={"center"}>
+          <span className="manrope-red-medium-18">
+            NO THANKS, I DON’T WANT THIS.
+          </span>
+        </Typography>
       </CardContent>
     </>
   );
