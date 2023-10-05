@@ -7,7 +7,7 @@ export default function OutlinedCard() {
     <>
       <CardContent>
         <Box sx={{ minWidth: 275 }}></Box>
-        <Typography>
+        <Typography style={{ fontSize: "3vw" }}>
           <span className="manrope-blue-regular-32"> ONE TIME ONLY</span>
           <span className="manrope-black-regular-32">
             {" "}
